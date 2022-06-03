@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NORMAL MODE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body class="bg">
+    <h1 style="text-align:center;background-color:bisque;color:red">Piano Tiles</h1>
+    <p class="scoretext">Normal Mode</p>
+    <div class="parent">
+      <div class="grid">
+        <div id="a" onclick="check(this.id)"></div>
+        <div id="b" onclick="check(this.id)"></div>
+        <div id="c" onclick="check(this.id)"></div>
+        <div id="d" onclick="check(this.id)"></div>
+        <div id="e" onclick="check(this.id)"></div>
+        <div id="f" onclick="check(this.id)"></div>
+        <div id="g" onclick="check(this.id)"></div>
+        <div id="h" onclick="check(this.id)"></div>
+        <div id="i" onclick="check(this.id)"></div>
+        <div id="j" onclick="check(this.id)"></div>
+        <div id="k" onclick="check(this.id)"></div>
+        <div id="l" onclick="check(this.id)"></div>
+        <div id="m" onclick="check(this.id)"></div>
+        <div id="n" onclick="check(this.id)"></div>
+        <div id="o" onclick="check(this.id)"></div>
+        <div id="p" onclick="check(this.id)"></div>
+      </div>
+      <div id="end">
+      <h1 style="color:#293462">Game Over!!!</h1>
+      <h1>Your Score </h1>
+      <h1 id="score">0</h1>
+      <button style="color:#040a24;background-color:gray" onclick="location.reload()">Play Again</h2>
+      </div>
+      <div id="win">
+        <h1 style="color:#293462">You Win!!!</h1>
+        <h1>Your Score </h1>
+        <h1 id="score">16</h1>
+        <button style="color:#040a24;background-color:gray" onclick="location.reload()">Play Again</h2>
+        </div>
+    </div>
+
+  </body>
+</html>

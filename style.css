@@ -1,0 +1,857 @@
+.bg{
+    background-image: linear-gradient(to right,#159957,#155799);
+}
+.scoretext{
+    color:rgb(213, 235, 13);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.parent{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+.parent1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.grid{
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50;
+}
+
+.grid1{
+    width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+}
+
+#a,#b,#c,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#p{
+    box-sizing: border-box;
+    float: left;
+    width: 70px; 
+    height: 70px; 
+    margin: 1px;
+    padding: 0;
+    border: 1px solid #404040;
+    background-color: black;
+}
+
+#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8,#t9,#t10,#t11,#t12,#t13,#t14,#t15,#t16,#t17,#t18,
+#t19,#t20,#t21,#t22,#t23,#t24,#t25,#t26,#t27,#t28,#t29,#t30,#t31,#t32,#t33,#t34,#t35,#t36{
+    box-sizing: border-box;
+    float: left;
+    width: 50px; 
+    height: 50px; 
+    margin: 1px;
+    padding: 0;
+    border: 1px solid #404040;
+    background-color: black;
+}
+
+#end{
+    display: none;
+    text-align: center;
+    position:absolute;
+    z-index: 5;
+    background-color:#F24C4C;
+    border: 2px solid black;
+    border-radius: 2%;
+    width:290px;
+    height:290px;
+}
+#end1{
+    display: none;
+    text-align: center;
+    position:absolute;
+    z-index: 5;
+    background-color:#F24C4C;
+    border: 2px solid black;
+    border-radius: 2%;
+    width:330px;
+    height:330px;
+}
+
+#win{
+    display: none;
+    text-align: center;
+    position:absolute;
+    z-index: 5;
+    background-color:#F24C4C;
+    border: 2px solid black;
+    border-radius: 2%;
+    width:290px;
+    height:290px;
+}
+#win1{
+    display: none;
+    text-align: center;
+    position:absolute;
+    z-index: 5;
+    background-color:#F24C4C;
+    border: 2px solid black;
+    border-radius: 2%;
+    width:330px;
+    height:330px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-left: 42vw;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+@keyframes a{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.a{
+    animation-duration: 1.5s;
+}
+
+@keyframes b{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.b{
+    animation-duration: 1.5s;
+}
+@keyframes c{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.c{
+    animation-duration: 1.5s;
+}
+@keyframes d{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.d{
+    animation-duration: 1.5s;
+}
+@keyframes e{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.e{
+    animation-duration: 1.5s;
+}
+@keyframes f{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.f{
+    animation-duration: 1.5s;
+}
+@keyframes g{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.g{
+    animation-duration: 1.5s;
+}
+@keyframes h{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.h{
+    animation-duration: 1.5s;
+}
+@keyframes i{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.i{
+    animation-duration: 1.5s;
+}
+@keyframes j{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.j{
+    animation-duration: 1.5s;
+}
+@keyframes k{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.k{
+    animation-duration: 1.5s;
+}
+@keyframes l{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.l{
+    animation-duration: 1.5s;
+}
+@keyframes m{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.m{
+    animation-duration: 1.5s;
+}
+@keyframes n{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.n{
+    animation-duration: 1.5s;
+}
+@keyframes o{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.o{
+    animation-duration: 1.5s;
+}
+@keyframes p{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.p{
+    animation-duration: 1.5s;
+}
+
+@keyframes t1{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t1{
+    animation-duration: 1.5s;
+}
+@keyframes t2{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t2{
+    animation-duration: 1.5s;
+}
+@keyframes t3{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t3{
+    animation-duration: 1.5s;
+}
+@keyframes t4{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t4{
+    animation-duration: 1.5s;
+}
+@keyframes t5{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t5{
+    animation-duration: 1.5s;
+}
+@keyframes t6{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t6{
+    animation-duration: 1.5s;
+}
+@keyframes t7{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t7{
+    animation-duration: 1.5s;
+}
+@keyframes t8{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t8{
+    animation-duration: 1.5s;
+}
+@keyframes t9{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t9{
+    animation-duration: 1.5s;
+}
+@keyframes t10{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t10{
+    animation-duration: 1.5s;
+}
+@keyframes t11{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t11{
+    animation-duration: 1.5s;
+}
+@keyframes t12{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t12{
+    animation-duration: 1.5s;
+}
+@keyframes t13{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t13{
+    animation-duration: 1.5s;
+}
+@keyframes t14{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t14{
+    animation-duration: 1.5s;
+}
+@keyframes t15{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t15{
+    animation-duration: 1.5s;
+}
+@keyframes t16{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t16{
+    animation-duration: 1.5s;
+}
+@keyframes t17{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t17{
+    animation-duration: 1.5s;
+}
+@keyframes t18{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t18{
+    animation-duration: 1.5s;
+}
+@keyframes t19{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t19{
+    animation-duration: 1.5s;
+}
+@keyframes t20{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t20{
+    animation-duration: 1.5s;
+}
+@keyframes t21{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t21{
+    animation-duration: 1.5s;
+}
+@keyframes t22{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t22{
+    animation-duration: 1.5s;
+}
+@keyframes t23{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t23{
+    animation-duration: 1.5s;
+}
+@keyframes t24{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t24{
+    animation-duration: 1.5s;
+}
+@keyframes t25{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t25{
+    animation-duration: 1.5s;
+}
+@keyframes t26{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t26{
+    animation-duration: 1.5s;
+}
+@keyframes t27{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t27{
+    animation-duration: 1.5s;
+}
+@keyframes t28{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t28{
+    animation-duration: 1.5s;
+}
+@keyframes t29{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t29{
+    animation-duration: 1.5s;
+}
+@keyframes t30{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t30{
+    animation-duration: 1.5s;
+}
+@keyframes t31{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t31{
+    animation-duration: 1.5s;
+}
+@keyframes t32{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t32{
+    animation-duration: 1.5s;
+}
+@keyframes t33{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t33{
+    animation-duration: 1.5s;
+}
+@keyframes t34{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t34{
+    animation-duration: 1.5s;
+}
+@keyframes t35{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t35{
+    animation-duration: 1.5s;
+}
+@keyframes t36{
+    0% {
+        background-color: black;
+    }
+    50%{
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.t36{
+    animation-duration: 1.5s;
+}
