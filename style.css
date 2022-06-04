@@ -124,6 +124,29 @@ a{
     font-weight: bold;
     line-height: 25px;
 }
+#scoreboard{
+    display: none;
+    position:absolute;
+    z-index: 5;
+    background-color:#9bf707;
+    border: 2px solid black;
+    border-radius: 2%;
+    width:350px;
+    height:340px;
+}
+.namelist{
+    font-weight: bold;
+    display:inline-block;
+    margin-top:15px;
+    margin-left:60px;
+    margin-right: 80px;
+}
+.ls{
+    display: block;
+    position:absolute;
+    margin-top:-17px;
+    margin-left:257px;
+}
 
 @keyframes a{
     0% {

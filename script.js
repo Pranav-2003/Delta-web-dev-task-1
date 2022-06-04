@@ -7,12 +7,14 @@ var round = 0;
 var start = 1;
 var item = "";
 var t = [];
+var person = ""
 window.addEventListener("load",function(){
   test = document.getElementById("t1");
   if(test==null){
     tile_blink();
   }
   else{
+    person = prompt("Please Enter Your Name (if not then score will not be saved):")
     tile_blink1();
   }
 },false);
@@ -78,7 +80,43 @@ function check1(id){
       clicks += 1;
     }
     else {
+      var d = {};
+      if(person!=null&&person!=""){
+        localStorage.setItem(person,round-1);}
+      for (var i = 0; i < localStorage.length; i++){
+        d[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
+      }
+      var arr = Object.keys(d).map(function(key) {
+        return [key, d[key]];
+      });
+      arr.sort(function(first, second) {
+        return second[1] - first[1];
+      });
+      if(arr.length<5){
+        for(var j in arr){
+          var temp = parseInt(j) + 1;
+          var n = "p"+(temp).toString();
+          var s = "s"+(temp).toString();
+          var sv = document.getElementById(s);
+          var nm = document.getElementById(n);
+          nm.innerHTML = arr[j][0];
+          sv.innerHTML = arr[j][1];
+        }
+      }
+      else{
+        for(var j in arr.slice(0,5)){
+          var temp = parseInt(j) + 1;
+          var n = "p"+(temp).toString();
+          var s = "s"+(temp).toString();
+          var sv = document.getElementById(s);
+          var nm = document.getElementById(n);
+          nm.innerHTML = arr[j][0];
+          sv.innerHTML = arr[j][1];
+        }
+      }
       box=document.getElementById("end1");
+      sb=document.getElementById("scoreboard");
+      sb.style.display="initial"
       box.style.display="initial";
       sc=document.getElementById("score");
       sc.innerHTML = round-1;
@@ -124,4 +162,12 @@ function tile_blink1(){
       setTimeout((function(y){return function(){y.style.pointerEvents="auto"}})(y),round*1550);
     }
   }
+}
+function stop(){
+  var s = document.getElementById("tilesound");
+  s.pause()
+}
+function stopdisplay(){
+  var b = document.getElementById("scoreboard");
+  b.style.display = "none";
 }
